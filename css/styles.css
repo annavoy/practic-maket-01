@@ -14,6 +14,17 @@ a {
 button {
   cursor: pointer;
 }
+.accent-color {
+  color: #fd9222;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 /* =========HEADER STYLES========= */
 .page-logo {
@@ -39,7 +50,7 @@ button {
 
 /* ===========HERO======== */
 
-.hero-section,
+/* .hero-section,
 .benefits-section,
 .page-footer {
   background: #1e1823;
@@ -47,11 +58,11 @@ button {
 }
 .hero-section {
   border-radius: 30px;
-}
+} */
 .main-title {
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.21429;
+  line-height: 1.21;
   letter-spacing: -0.03em;
 }
 .buy-now-btn {
@@ -93,8 +104,12 @@ button {
 .scroll-down-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
   letter-spacing: -0.03em;
+}
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: #fd9222;
 }
 
 /* ===========BENEFITS======== */
@@ -105,54 +120,47 @@ button {
 }
 .benefits-text {
   font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
-  color: #ffffffb3;
 }
 
 /* =========INGREDIENTS======== */
 
-.section-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-}
-.accent-color {
-  color: #fd9222;
-}
 .ingredients-description {
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
 }
-.ingredients-list-item {
-  border-radius: 15px;
+.ingredients-list-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 /* =======HOW MADE SECTION======= */
 .how-made-title {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33333;
+  line-height: 1.33;
 }
 .now-made-list-item {
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 }
 /* ======REVIEWS======= */
 .review-list-fullname {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33333;
+  line-height: 1.33;
   text-align: center;
 }
 .review-list-text {
   font-size: 14px;
-  line-height: 1.3ß;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
@@ -176,18 +184,22 @@ button {
 .page-footer-title {
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.2;
+  line-height: 1.21;
   letter-spacing: -0.02em;
 }
 .contact-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
   text-align: center;
 }
 .contact-list-link {
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+}
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: #fd9222;
 }
