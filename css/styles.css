@@ -111,6 +111,9 @@ body {
   color: #fff;
 }
 .hero-section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 30px;
 }
 .hero-container {
@@ -124,6 +127,11 @@ body {
   letter-spacing: -0.03em;
   margin-bottom: 32px;
 }
+.hero-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .buy-now-btn {
   max-width: 144px;
   height: 45px;
@@ -160,10 +168,6 @@ body {
 .how-made-link:hover,
 .how-made-link:focus {
   border: 1px solid #fd9222;
-  border-radius: 100px;
-  padding: 14px 40px;
-  width: 183px;
-  height: 45px;
 }
 .scroll-down-link {
   font-weight: 500;
