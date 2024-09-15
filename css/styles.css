@@ -104,7 +104,7 @@ body {
 
 /* ===========HERO======== */
 
-/* .hero-section,
+.hero-section,
 .benefits-section,
 .page-footer {
   background: #1e1823;
@@ -112,21 +112,31 @@ body {
 }
 .hero-section {
   border-radius: 30px;
-} */
+}
+.hero-container {
+  padding: 381px 56px 40px;
+}
 .main-title {
+  max-width: 484px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  margin-bottom: 32px;
 }
 .buy-now-btn {
+  max-width: 144px;
+  height: 45px;
   font-weight: 600;
   font-size: 14px;
-  color: #fff;
-  border-radius: 100px;
+  color: #ffffff;
   padding: 14px 40px;
-  background: #fd9222;
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  margin-right: 14px;
 }
+
 .buy-now-btn:hover,
 .buy-now-btn:focus,
 .how-made-link:hover,
@@ -143,7 +153,7 @@ body {
 .how-made-link {
   font-weight: 600;
   font-size: 14px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 100px;
   padding: 14px 40px;
 }
@@ -160,6 +170,7 @@ body {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 .scroll-down-link:hover,
 .scroll-down-link:focus {
