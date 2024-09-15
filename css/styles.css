@@ -115,6 +115,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
+  margin-bottom: 72px;
 }
 .hero-container {
   padding: 381px 56px 40px;
@@ -182,15 +183,26 @@ body {
 }
 
 /* ===========BENEFITS======== */
-
+.benefits-container {
+  padding: 50px;
+}
+.benefits-list {
+  display: flex;
+  gap: 70px;
+}
+.benefits-item {
+  width: calc((100% - 140px) / 3);
+}
 .benefits-title {
   font-weight: 600;
   font-size: 18px;
+  margin-bottom: 18px;
 }
 .benefits-text {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* =========INGREDIENTS======== */
@@ -244,22 +256,56 @@ body {
 }
 
 /* =======HOW MADE SECTION======= */
+.how-made-container-wrapper {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 50px;
+}
+.how-made-text-wripper {
+  flex-grow: 1;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.how-made-list {
+  padding-right: 26px;
+}
 .how-made-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
-.now-made-list-item {
+.how-made-list-item {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
+.how-made-list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
 /* ======REVIEWS======= */
+
+.review-list {
+  display: flex;
+  column-gap: 28px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.review-list-item {
+  width: calc((100% - 56px) / 3);
+  padding: 56px 24px 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background-color: #fff;
+}
 .review-list-fullname {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
 }
 .review-list-text {
   font-size: 14px;
@@ -269,10 +315,14 @@ body {
   color: rgba(17, 17, 17, 0.7);
 }
 .review-list-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 600;
   font-size: 18px;
   color: #111;
   border: 1px solid #fd9222;
+  background-color: #ffffff;
   border-radius: 100px;
   padding: 14px 40px;
 }
