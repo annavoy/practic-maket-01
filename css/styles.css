@@ -8,7 +8,6 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 ul,
 ol {
   margin-top: 0;
@@ -75,10 +74,15 @@ body {
   align-items: center;
 }
 .page-logo {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
+}
+.page-logo-icon {
+  margin-left: 4px;
 }
 .text-italic {
   font-style: italic;
