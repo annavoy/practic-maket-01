@@ -142,7 +142,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
-  background-image: linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)), url('../images/bg.jpg');
+  background-image: linear-gradient(
+      rgba(30, 24, 35, 0.4),
+      rgba(30, 24, 35, 0.4)
+    ),
+    url('../images/bg.jpg');
   background-size: cover;
   background-color: #1e1823;
 }
@@ -177,7 +181,8 @@ body {
   border: none;
   border-radius: 100px;
   margin-right: 14px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buy-now-btn:hover,
@@ -206,7 +211,8 @@ body {
   text-align: center;
   border-radius: 100px;
   border: 1px solid #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .how-made-link:hover,
 .how-made-link:focus {
@@ -297,6 +303,7 @@ body {
 }
 .ingredients-list {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 24px;
 }
 .ingredients-list-item {
@@ -320,9 +327,7 @@ body {
   background-color: #1e1823;
   border: 1px solid #1e1823;
 }
-.ingredients-list-item:hover .ingredient-overlay {
-  transform: translateY(0%);
-}
+
 .ingredients-list-title {
   font-weight: 600;
   font-size: 14px;
@@ -335,15 +340,56 @@ body {
 }
 .ingredient-overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  color: #111111;
   border-radius: 15px;
   background-color: #ffffff;
-  overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0, 4, 0, 0, 2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ingredients-list-item:hover .ingredient-overlay {
+  transform: translateY(0%);
+}
+.ingredient-overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ingredient-overlay-categories {
+  display: flex;
+  column-gap: 6px;
+  margin-bottom: 14px;
+}
+
+.ingredient-overlay-category {
+  font-size: 10px;
+  line-height: 1.2;
+  padding: 6px 16px;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+}
+
+.ingredient-overlay-category-primary {
+  color: #ffffff;
+  background-color: #fd9222;
+}
+
+.ingredient-overlay-category-secondary {
+  background-color: #fafafa;
+}
+
+.ingredient-overlay-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
 }
 
 /* =======HOW MADE SECTION======= */
@@ -384,12 +430,19 @@ body {
   margin-bottom: 50px;
 }
 .review-list-item {
+  position: relative;
   width: calc((100% - 56px) / 3);
   padding: 56px 24px 24px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background-color: #fff;
+}
+.review-list-avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .review-list-fullname {
   font-weight: 600;
@@ -407,20 +460,23 @@ body {
 }
 .review-list-btn {
   display: block;
+  min-width: 222px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 40px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 600;
-  font-size: 18px;
-  color: #111;
-  border: 1px solid #fd9222;
-  background-color: #ffffff;
   border-radius: 100px;
-  padding: 14px 40px;
+  border: 1px solid #fd9222;
+  color: #111111;
+  background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-list-btn:hover,
 .review-list-btn:focus {
   color: #ffffff;
-  background: #fd9222;
+  background-color: #fd9222;
 }
 
 /* =======FOOTER======= */
@@ -451,11 +507,15 @@ body {
   line-height: 1.29;
   margin-bottom: 14px;
 }
+.contact-list-item:not(:last-child) {
+  margin-bottom: 4px;
+}
 .contact-list-link {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list-link:hover,
 .contact-list-link:focus {
